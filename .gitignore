@@ -8,3 +8,4 @@ appsettings.json
 .suo
 applicationhost.config
 API.csproj.user
+debug.log

@@ -4,15 +4,19 @@ import { Router } from 'react-router-dom';
 import {createBrowserHistory} from 'history';
 import './app/layout/styles.css';
 import 'react-toastify/dist/ReactToastify.min.css';
+import 'react-widgets/dist/css/react-widgets.css';
 import App from './app/layout/App';
 import * as serviceWorker from './serviceWorker';
 import ScrollToTop from './app/layout/ScrollToTop';
+import dateFnsLocalizer from 'react-widgets-date-fns';
+
+dateFnsLocalizer();
 
 export const history = createBrowserHistory();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router history={history}>
+    <Router history={history}> 
       <ScrollToTop>
         <App />
       </ScrollToTop>
